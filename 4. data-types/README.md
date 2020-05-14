@@ -1,4 +1,4 @@
-##Задание 4.1
+### Задание 4.1
 
 Обработать строку nat таким образом, чтобы в имени интерфейса вместо FastEthernet было GigabitEthernet.
 
@@ -8,7 +8,7 @@
 NAT = "ip nat inside source list ACL interface FastEthernet0/1 overload"
 ```
 
-###Задание 4.2
+### Задание 4.2
 
 Преобразовать строку mac из формата XXXX:XXXX:XXXX в формат XXXX.XXXX.XXXX XXXX.XXXX.XXXX
 
@@ -18,7 +18,7 @@ NAT = "ip nat inside source list ACL interface FastEthernet0/1 overload"
 mac = 'AAAA:BBBB:CCCC'
 ```
 
-###Задание 4.3
+### Задание 4.3
 
 Получить из строки config список VLANов вида: ['1', '3', '10', '20', '30', '100']
 
@@ -27,7 +27,7 @@ mac = 'AAAA:BBBB:CCCC'
 config = 'switchport trunk allowed vlan 1,3,10,20,30,100'
 ````
 
-###Задание 4.4
+### Задание 4.4
 
 Список vlans это список VLANов, собранных со всех устройств сети, поэтому в списке есть повторяющиеся номера VLAN.
 
@@ -39,7 +39,7 @@ config = 'switchport trunk allowed vlan 1,3,10,20,30,100'
 vlans = [10, 20, 30, 1, 2, 100, 10, 30, 3, 4, 10]
 ```
 
-###Задание 4.5
+### Задание 4.5
 
 Из строк command1 и command2 получить список VLANов, которые есть и в команде command1 и в команде command2.
 
@@ -52,7 +52,7 @@ command1 = 'switchport trunk allowed vlan 1,2,3,5,8'
 command2 = 'switchport trunk allowed vlan 1,3,8,9'
 ```
 
-###Задание 4.6
+### Задание 4.6
 
 Обработать строку ospf_route и вывести информацию на стандартный поток вывода в виде:
 
@@ -70,7 +70,7 @@ Outbound Interface:     FastEthernet0/0
 ospf_route = 'OSPF        10.0.24.0/24 [110/41] via 10.0.13.3, 3d18h, FastEthernet0/0'
 ```
 
-###Задание 4.7
+### Задание 4.7
 
 Преобразовать MAC-адрес mac в двоичную строку такого вида: 
 ```python
@@ -83,7 +83,7 @@ ospf_route = 'OSPF        10.0.24.0/24 [110/41] via 10.0.13.3, 3d18h, FastEthern
 mac = 'AAAA:BBBB:CCCC'
 ```
 
-###Задание 4.8
+### Задание 4.8
 
 Преобразовать IP-адрес в двоичный формат и вывести на стандартный поток вывода вывод столбцами, таким образом:
 
