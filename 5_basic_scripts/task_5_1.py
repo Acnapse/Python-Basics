@@ -31,25 +31,21 @@ name = input('Введите имя устройства: ')
 ans = london_co[name]
 
 # 5.1a
-
 name_device = input('Введите имя устройства: ')
 name_param = input('Введите имя параметра: ')
 ans = london_co[name_device][name_param]
 
 # 5.1b
-
 name_device = input('Введите имя устройства: ')
 name_param = input('Введите имя параметра{}: '.format(tuple(london_co[name_device].keys())))
 ans = london_co[name_device][name_param]
 
 # 5.1c
-
 name_device = input('Введите имя устройства: ')
 name_param = input('Введите имя параметра{}: '.format(tuple(london_co[name_device].keys())))
 ans = london_co[name_device].get(name_param, 'Такого параметра нет')
 
 # 5.1d
-
 name_device = input('Введите имя устройства: ')
 name_param = input('Введите имя параметра{}: '.format(tuple(london_co[name_device].keys())))
 ans = london_co[name_device].get(name_param.lower(), 'Такого параметра нет')
